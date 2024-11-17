@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ------- Menu ------  */
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.menuItems{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu-item-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    overflow: hidden; /*To clip content and don't allow scrolling */
+}
+
+.menu-item-col img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    max-height: 100%;
+    display: block;
+    padding-top: 10%;
+}
+
+/* ----- Responsive Design ------- */
+@media (max-width: 700px){    
+    .row{
+        flex-direction: column;
+    }
+
+}
