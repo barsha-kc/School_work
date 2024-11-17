@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#colorPanel{
+    background-color: #553322;
+    padding: 20px;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+#colorCode{
+    color:rgb(118, 201, 239);
+}
+
+.btn{
+    text-transform: uppercase;
+    background: transparent;
+    display: inline-block;
+    font-weight: 700;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn:hover{
+    background: red;
+    color: white;
+    transition: 1s;
+}
+
+* ---------- Testimonials ----------- */
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    margin: auto;
+}
+
+.testimonials{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; 
+}
+
+.testimonial-col{
+    display: flex;
+    /*flex-basis: 44%;*/
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.center{
+    margin: auto;
+}
+#imageContainer{
+    height: 200px;
+    border-radius: 75%; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#imageContainer img{
+    width: 100%; 
+    object-fit:scale-down; 
+    object-position: center; 
+}
+
+.testimonial-col p{
+    padding: 0;
+}
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fa-sharp{
+    color: #f44336;
+}
