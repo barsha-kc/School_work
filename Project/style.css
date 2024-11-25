@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+
+}
+
+#Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121d91;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#Name .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Name .weather {
+    font-size: 1em;
+    margin-right: auto;
+    margin-left: 100px;
+    width: 500px;
+    height: 100%;
+
+
+}
+
+#Name .weather img {
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#Name .book-now {
+    background-color: chocolate;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#Name .book-now:hover {
+    background-color: rgb(226, 162, 116);
+}
+
+#navigation nav {
+    background-color: #00509e;
+    padding: 10px 20px;
+}
+
+#navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+#navigation ul li a:hover {
+    background-color: #28619a;
+    border-radius: 5px;
+}
+
+
+
+
+.hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .tagline {
+    position: absolute;
+    right: 20px;
+    bottom: 400px;
+    color: white;
+    background-color: rgba(156, 153, 153, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 400px;
+}
+
+.hero .tagline2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    backgroud-color: rgba(156, 153, 153, 0.6);
+    padding: 10px;
+}
+
+.hero .tagline p {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.hero .explore-btn {
+    background-color: chocolate;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero .explore-btn:hover {
+    background-color: rgb(219, 154, 107);
+}
+
+.welcome-section {
+    text-align: center;
+    background-color: rgba(156, 153, 153, 0.6);
+    color: white;
+    padding: 20px;
+}
+
+.welcome-section a.book-now {
+    background-color: chocolate;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.welcome-section a.book-now:hover {
+    background-color: rgb(221, 151, 102);
+}
+
+
+.map {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    height: 300px;
+    padding: 20px;
+    background-color: #00509e;
+
+
+}
+
+
+.map .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+
+    color: white;
+    text-align: center;
+
+}
+
+.map .text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.map .text p {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.5;
+
+}
+
+.map .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+
+
+}
+
+.map .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+
+
+.image-lr {
+    position: relative;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    ;
+}
+
+.image-lr img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.lr-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.lr-btn.left-btn {
+    left: 10px;
+}
+
+.lr-btn.right-btn {
+    right: 10px;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.activity-box {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.activity-box h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #131618;
+}
+
+
+.newsletter {
+    text-align: center;
+    background-color: #00509e;
+    color: white;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-form input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    background: chocolate;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.newsletter-form button:hover {
+    background-color: rgb(230, 161, 112);
+}
+
+@media (max-width: 768px) {
+    #Name {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+.activities {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2-px;
+    margin: 20px 50px;
+}
+
+.activity-box {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.activity-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #ccc;
+    object-fit: cover;
+}
+
+.box h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #0b0e10;
+}
+
+.box p {
+    padding: 0 15px 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+.suggestion-form {
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    background-color: #00509e;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: white;
+}
+
+.suggestion-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.suggestion-form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suggestion-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.suggestion-form label {
+    font-size: 1rem;
+    color: white;
+}
+
+.suggestion-form input,
+.suggestion-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.suggestion-form button {
+    padding: 10px 20px;
+    border: none;
+    background: chocolate;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.suggestion-form button:hover {
+    background-color: #003f7f;
+}
+
+
+
+
+.pricing {
+    text-align: center;
+    padding: 20px;
+}
+
+.pricing h1 {
+    font-size: 2rem;
+    color: #0f1011;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.pricing-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+
+}
+
+.right-box {
+    flex: 10;
+    display: flex;
+
+
+}
+
+.right-box img {
+    border-radius: 10px;
+    height: 100%;
+}
+
+.pricing-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.pricing-box h2 {
+    font-size: 1.5rem;
+    color: #191b1e;
+    margin-bottom: 15px;
+}
+
+.pricing-box .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #207136;
+    margin-bottom: 15px;
+}
+
+.pricing-box .price span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.pricing-box ul {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.pricing-box ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.pricing-box .select-plan {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: chocolate;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pricing-box .select-plan:hover {
+    background-color: rgb(219, 170, 136);
+}
+
+
+
+.about {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.about h1 {
+    font-size: 2rem;
+    color: #0c0d0e;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contact {
+    background-color: #00509e;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.contact label {
+    font-size: 1rem;
+    color: white;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    background: chocolate;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact button:hover {
+    background-color: rgb(185, 142, 112);
+}
